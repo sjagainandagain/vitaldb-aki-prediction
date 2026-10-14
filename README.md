@@ -165,6 +165,8 @@ v3 코호트, 주 정의 기준.
 
 ### Calibration
 
+![Calibration](figures/calibration_v3.png)
+
 | 모델 | Brier (기준 0.0343) | 예측 평균 (실제 0.0355) | 보정 기울기 |
 |---|---|---|---|
 | LR 수술 전 | 0.0297 | 0.0360 | 0.72 |
