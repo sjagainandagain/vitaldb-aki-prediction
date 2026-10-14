@@ -1,0 +1,6 @@
+# 데이터·산출물은 저장소에 올리지 않음
+*.csv
+*.pt
+*.pkl
+__pycache__/
+.ipynb_checkpoints/

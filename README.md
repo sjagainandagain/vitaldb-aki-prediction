@@ -6,6 +6,7 @@
 - 모델: Logistic Regression, XGBoost
 - 검증: 환자 단위 5-fold 교차검증, OOF 예측 부트스트랩 95% CI
 - 결과: CV AUROC 0.81–0.84. LR vs XGB 차이 확인 X
+- 코드: [`vitaldb_aki.ipynb`](vitaldb_aki.ipynb) (Colab, 실행 결과 포함)
 - 상태: **탐색적 분석, 진행 중**. 여러 결정을 결과 확인 후 내림 ([Limitations](#limitations))
 
 ## Table of Contents
@@ -236,12 +237,13 @@ v3 코호트, 주 정의 기준.
 
 ## Reproduce
 
-환경: Google Colab, 산출물은 Google Drive `MyDrive/vitaldb-aki/`에 저장
+환경: Google Colab, 노트북 `vitaldb_aki.ipynb`, 산출물은 Google Drive `MyDrive/vitaldb-aki/`에 저장
 
 1. 노트북 맨 위 세팅 셀 실행 → Drive 마운트 `True` 확인
 2. 런타임 → 모두 실행 (`random_state=42`)
 3. 생체신호 변수: `data/bp_features.csv`, `data/hr_vaso_features.csv` 있으면 추출 건너뜀
-   - 처음부터 추출 시 파일 삭제 후 `RUN_HEAVY = True` (혈압 약 75분)
+   - 처음부터 추출 시 해당 csv 삭제 (혈압 약 75분)
+   - 동맥 라인 vs 커프 비교: 세팅 셀 `RUN_HEAVY = True`일 때만 실행
 
 ```
 vitaldb-aki/
@@ -257,7 +259,8 @@ vitaldb-aki/
 - [ ] Table 1 (포함/제외군, t-검정·카이제곱)
 - [ ] VitalDB 라이선스 확인
 - [ ] 재보정, 중첩 교차검증으로 튜닝
-- [ ] 노트북 정리 후 저장소 업로드
+- [x] 노트북 업로드
+- [ ] 노트북 정리 (설명 셀 문체 통일, 셀 순서)
 
 ## Notes on AI Assistance
 
