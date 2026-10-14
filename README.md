@@ -311,7 +311,7 @@ v3 코호트, 주 정의 기준.
 ```
 vitaldb-aki/
 ├── data/      # cases, labs, trks, bp_features, hr_vaso_features (.csv)
-├── outputs/   # aki_dataset(_v2, _v3), oof_all_v3, oof_kdigo_v3, lr_coef_v3, shap_importance_v3
+├── outputs/   # aki_dataset(_v2, _v3), oof_all_v3, oof_kdigo_v3, lr_coef_v3, shap_importance_v3, table1a_inclusion_v3, table1b_aki_v3
 ├── figures/   # shap_summary_v3, shap_dependence_cr_v3, shap_dependence_cr_kdigo_v3, calibration_v3
 └── models/
 ```
