@@ -43,7 +43,7 @@
 - **VitalDB**: 서울대병원 비심장 수술 6,388건 (2016–2017), API·`vitaldb` 패키지로 공개
 - 사용 테이블: `cases` (수술 1건 = 1행), `labs` (검사 1회 = 1행), `trks` (신호 목록)
 - 생체신호: `Solar8000/ART_MBP`, `Solar8000/NIBP_MBP`, `Solar8000/HR`, 승압제 펌프 신호 (`PHEN_RATE`, `NEPI_RATE`, `DOPA_RATE`)
-- 라이선스: **미확인** — 공개 전 vitaldb.net에서 확인 예정
+- 라이선스: PhysioNet 배포본 CC BY 4.0 (출처 표기 조건). 이 프로젝트가 쓴 vitaldb.net API의 Data Use Agreement는 본문 미확인
 - 데이터 파일 저장소 미포함
 
 ## Outcome Definition
@@ -284,7 +284,8 @@ vitaldb-aki/
 
 - [x] 승압제·심박수 모델 (H1, H2)
 - [ ] Table 1 (포함/제외군, t-검정·카이제곱)
-- [ ] VitalDB 라이선스 확인
+- [x] VitalDB 라이선스 확인 (PhysioNet CC BY 4.0)
+- [ ] vitaldb.net Data Use Agreement 본문 확인
 - [ ] 재보정, 중첩 교차검증으로 튜닝
 - [x] 노트북 업로드
 - [x] 노트북 설명 셀 문체 정리
@@ -297,6 +298,7 @@ vitaldb-aki/
 
 ## References
 
-- Lee HC, Park Y, Yoon SB, et al. VitalDB, a high-fidelity multi-parameter vital signs database in surgical patients. *Sci Data*. 2022.
+- Lee HC, Park Y, Yoon SB, et al. VitalDB, a high-fidelity multi-parameter vital signs database in surgical patients. *Sci Data*. 2022;9:279. doi:10.1038/s41597-022-01411-5
+- Lee H, Jung C. VitalDB, a high-fidelity multi-parameter vital signs database in surgical patients (version 1.0.0). *PhysioNet*. 2022. doi:10.13026/czw8-9p62
 - KDIGO Clinical Practice Guideline for Acute Kidney Injury. *Kidney Int Suppl*. 2012.
 - Christodoulou E, Ma J, Collins GS, et al. A systematic review shows no performance benefit of machine learning over logistic regression for clinical prediction models. *J Clin Epidemiol*. 2019.
